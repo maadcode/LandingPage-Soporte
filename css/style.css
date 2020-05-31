@@ -19,7 +19,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
     box-shadow: 2px 2px 5px #000;
-    opacity: 0.9;
+}
+
+.nav-item i {
+    color: red;
 }
 
 /* Header */
@@ -148,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #skills>img {
     padding: 20px;
-    width: 500px;
+    width: 50%;
     animation: ease-in animat 1s;
 }
 
@@ -236,7 +239,7 @@ footer {
     border-color: #000;
 }
 
-
+/* Animations */
 
 @keyframes animat {
     0% {
@@ -244,5 +247,35 @@ footer {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Breakpoints */
+
+@media screen and (max-width : 800px) {
+
+    /* Services Section */
+
+    .article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Services Section */
+
+    .article {
+        width: 90%;
+    }
+
+    /* Skills Section */
+
+    #skills {
+        flex-direction: column;
+    }
+
+    #skills img {
+        width: 100%;
     }
 }
