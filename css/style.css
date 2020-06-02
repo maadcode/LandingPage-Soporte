@@ -333,6 +333,94 @@ h1 {
     margin-right: 10px;
 }
 
+/* Contact */
+
+#contact {
+    padding: 20px;
+    background: #000;
+}
+
+.title-contact {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-contact h3 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container-contact {
+    padding-top: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-contact .box-contact {
+    text-align: center;
+}
+
+.container-contact .box-contact .icon-contact {
+    font-size: 80px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-contact .box-contact .icon-contact h4,
+ .container-contact .box-contact .icon-contact h3 {
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 24px;
+    transition-delay: 0.3s;
+    color: transparent;
+}
+
+.container-contact .box-contact .fa:hover ~ h4,
+ .container-contact .box-contact .fa:hover ~ h3 {
+    color: #fff;
+}
+.container-contact .box-contact h4 {
+    font-weight: bold;
+    margin: 5px 0;
+    font-style: 30px;
+}
+
+.container-contact .box-contact .icon-contact h4:before,
+ .container-contact .box-contact .icon-contact h3:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 100%;
+     width: 100%;
+     height: 100%;
+     background: #00bcd4;
+     transition: 1s;
+}
+
+.container-contact .box-contact .icon-contact h4:before {
+    left: initial;
+    right: 100%;
+    background: #9c27b0;
+}
+
+.container-contact .box-contact .fa:hover ~ h3:before {
+    left: -100%;
+}
+
+.container-contact .box-contact .fa:hover ~ h4:before {
+    left: initial;
+    right: -100%;
+}
+
+
 /* Footer */
 
 footer {
